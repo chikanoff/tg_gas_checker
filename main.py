@@ -10,11 +10,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Замените 'YOUR_TELEGRAM_BOT_TOKEN' на токен вашего бота
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 CHAT_ID = os.getenv('CHAT_ID')
 
-# Инициализация бота
 bot = Bot(token=TELEGRAM_BOT_TOKEN)
 
 previous_gas_price = None
